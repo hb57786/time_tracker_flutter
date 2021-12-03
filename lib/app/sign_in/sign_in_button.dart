@@ -6,15 +6,14 @@ class SignInButton extends CustomRaisedButton {
     String text,
     Color color,
     Color textColor,
-    double borderRadius,
     VoidCallback onPressed,
   }) : super(
           child: Text(
             text,
-            style: TextStyle(color: textColor, fontSize: 15),
+            style: TextStyle(fontSize: 15),
           ),
-          borderRadius: borderRadius,
           color: color,
+          textColor: textColor,
           onPressed: onPressed,
         );
 }
